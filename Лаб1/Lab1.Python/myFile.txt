@@ -1,0 +1,16 @@
+      file.write(str + '\n')
+            str = input()    
+def ReadingFrom(name):
+    with open(name, 'r') as file:
+        text=file.read()
+        print(text) 
+        return text
+def Func(text):
+    op,cl=0
+    for i in text:
+        if i=='(':
+            op+=1
+        if i==')':
+            cl+=1
+    if op==cl:
+        print("\nThe number of '
