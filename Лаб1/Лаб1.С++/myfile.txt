@@ -1,0 +1,15 @@
+ ifstream outFile(name);
+    if (outFile.is_open()) 
+    {
+        while (!outFile.eof())
+        {
+            getline(outFile, line);
+            cout << line << endl;
+            text += line + "\n";
+        }
+        outFile.close();
+    }
+    else
+    {
+        cout << "Can`t open the file!" << endl;
+    }
