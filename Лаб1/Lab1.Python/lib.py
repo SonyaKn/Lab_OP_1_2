@@ -11,14 +11,7 @@ def ReadingFrom(name):
         print(text) 
         return text
 def Func(text):
-    op=0
-    cl=0
-    for i in text:
-        if i=='(':
-            op+=1
-        if i==')':
-            cl+=1
-    if op==cl:
+    if text.count('(')==text.count(')'):
         print("\nThe number of '(' is equal to the number of ')'\n")
     else:
         print("\nThe number of '(' isn`t equal to the number of ')'\n")
